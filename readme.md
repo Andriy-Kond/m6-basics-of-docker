@@ -1,14 +1,16 @@
-<!-- # Example of program testing with using http-requests to backend:
+# Packages
 
-### - [jest](https://jestjs.io/) (npm i --save-dev jest)
+- `express from "express"` - create server package
+- `logger from "morgan"` - HTTP request logger middleware for node.js
+- `cors from "cors"` - Enable CORS: allows cross-requests from different addresses.
+- `import Joi from "joi"` - Checking request body: schema description language and data validator
 
-### jest options
+- add `try-catch decorator`
 
-Add to package.json test script: `"test": "jest"`.
-It will force `JEST` looking for files with text `.test` in name in current project and run all of them. The `JEST` import to these files all needed function automatically. No need import them manually.
+#### For render to render.com needs add to package.json:
 
-### - [express](https://expressjs.com/en/5x/api.html) + [cors](https://www.npmjs.com/package/cors) (npm i express cors)
-
-### - [multer](https://www.npmjs.com/package/multer) (npm i multer)
-
-### - [gravatar](https://www.npmjs.com/package/gravatar) (npm i gravatar) -->
+```js
+  "engines": {
+    "node": "20.11" // current version on my PC
+  }
+```
